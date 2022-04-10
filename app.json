@@ -8,7 +8,6 @@
         "ocr"
     ],
     "env": {
-        "ENVIRONMENT": "prod",
-        "TESTING": 0
+        "ENVIRONMENT": "prod"
     }
 }
