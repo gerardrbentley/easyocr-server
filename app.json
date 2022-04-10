@@ -1,0 +1,10 @@
+{
+    "name": "FastAPI + EasyOCR Example",
+    "description": "A barebones FastAPI Server to drive EasyOCR deployed to Heroku",
+    "repository": "https://github.com/gerardrbentley/easyocr-server",
+    "keywords": [
+        "python",
+        "fastapi",
+        "ocr"
+    ]
+}
