@@ -5,6 +5,8 @@ Specifically, FastAPI runs the API server for uploading image files and EasyOCR 
 
 Basic implementation to handle english text without GPU support.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/gerardrbentley/easyocr-server)
+
 ## Local Run
 
 ### Update environment
