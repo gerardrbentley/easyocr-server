@@ -6,5 +6,9 @@
         "python",
         "fastapi",
         "ocr"
-    ]
+    ],
+    "env": {
+        "ENVIRONMENT": "prod",
+        "TESTING": 0
+    }
 }
