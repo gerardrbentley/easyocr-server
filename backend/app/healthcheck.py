@@ -1,7 +1,6 @@
 from fastapi import APIRouter, Depends
 
-from app.config import get_settings, Settings
-
+from app.config import Settings, get_settings
 
 router = APIRouter()
 
@@ -11,5 +10,5 @@ async def health(settings: Settings = Depends(get_settings)):
     return {
         "health": "healthy",
         "environment": settings.environment,
-        "testing": settings.testing
+        "testing": settings.testing,
     }

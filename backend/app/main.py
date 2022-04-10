@@ -1,10 +1,8 @@
-
 import logging
 
 from fastapi import FastAPI
 
-from app import healthcheck
-
+from app import healthcheck, ocr
 
 log = logging.getLogger("uvicorn")
 
@@ -12,6 +10,7 @@ log = logging.getLogger("uvicorn")
 def create_application() -> FastAPI:
     application = FastAPI()
     application.include_router(healthcheck.router)
+    application.include_router(ocr.router)
 
     return application
 

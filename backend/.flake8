@@ -1,0 +1,18 @@
+[flake8]
+filename = ./src/*.py,*.py
+ignore =
+    E501, # Long lines not too bad
+    E731, # Lambdas not too bad
+    W503, # Line breaks on binary operators flip-flop
+    W504
+# Black default / split monitors
+max-line-length = 88
+# Mccabe branching factor < 4 good; 5-7 medium; 8-10 complex; 10+ basically random
+max-complexity = 5
+# personal opinion
+docstring-convention = google
+# Asserts in tests allowed
+per-file-ignores = tests/*:S101
+
+[pycodestyle]
+max-line-length = 88
